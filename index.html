@@ -3,58 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>امیرعلی آرین - رزومه</title>
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f0f0f0;
-        }
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .contact {
-            margin-top: 20px;
-            background: #ecf0f1;
-            padding: 15px;
-            border-radius: 10px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-    </style>
+    <title>امیرعلی آرین - نمونه کارها</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="card">
-        <h1>امیرعلی آرین</h1>
-        <p><strong>توسعه‌دهنده وب</strong> | علاقه‌مند به فرانت‌اند</p>
-        
-        <h2>درباره من</h2>
-        <p>در حال یادگیری ساخت سایت‌های مدرن و حرفه‌ای. این اولین پروژه گیت‌هاب پیجز من است.</p>
-        
-        <h2>مهارت‌ها</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript (در حال یادگیری)</li>
-            <li>Git & GitHub</li>
-        </ul>
-        
-        <div class="contact">
-            <h3>تماس</h3>
-            <a href="https://github.com/amiraliarian">GitHub</a> | 
-            <a href="mailto:amirali@example.com">ایمیل</a>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">امیرعلی آرین</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="#projects">نمونه کارها</a></li>
+                    <li><a href="#about">درباره من</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h1>سلام! من امیرعلی آرین هستم</h1>
+                <p>توسعه‌دهنده وب با علاقه به ساخت سایت‌های مدرن و کاربرپسند. اینجا می‌تونید نمونه کارهای من رو ببینید.</p>
+            </section>
+
+            <section id="projects">
+                <h2>نمونه کارهای من</h2>
+                <div class="projects-grid">
+                    
+                    <!-- پروژه 1 -->
+                    <div class="project-card">
+                        <h3>سایت رزومه شخصی</h3>
+                        <p class="tech">HTML • CSS • GitHub Pages</p>
+                        <p>اولین پروژه من که با استفاده از HTML و CSS ساخته شده و روی گیت‌هاب پیجز میزبانی میشه.</p>
+                        <a href="portfolio/project1.html" class="btn">مشاهده جزئیات</a>
+                    </div>
+
+                    <!-- پروژه 2 -->
+                    <div class="project-card">
+                        <h3>پروژه نمونه دوم</h3>
+                        <p class="tech">React • Tailwind</p>
+                        <p>توضیحات پروژه دوم... به زودی اضافه میشه</p>
+                        <a href="portfolio/project2.html" class="btn">مشاهده جزئیات</a>
+                    </div>
+
+                    <!-- پروژه 3 -->
+                    <div class="project-card">
+                        <h3>پروژه نمونه سوم</h3>
+                        <p class="tech">JavaScript • API</p>
+                        <p>توضیحات پروژه سوم... به زودی اضافه میشه</p>
+                        <a href="portfolio/project3.html" class="btn">مشاهده جزئیات</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 امیرعلی آرین - تمامی حقوق محفوظ است</p>
+            <p>
+                <a href="https://github.com/amiraliarian" style="color: white;">GitHub</a> | 
+                <a href="mailto:amirali@example.com" style="color: white;">ایمیل</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
