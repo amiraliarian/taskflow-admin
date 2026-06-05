@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت رزومه شخصی - امیرعلی آرین</title>
+    <title>سایت رزومه حرفه‌ای - امیرعلی آریان</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -11,53 +12,61 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <a href="../index.html">امیرعلی آرین</a>
+                    <a href="../index.html">امیرعلی آریان</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="../index.html">صفحه اصلی</a></li>
+                    <li><a href="../index.html#home">خانه</a></li>
                     <li><a href="../index.html#projects">نمونه کارها</a></li>
                 </ul>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main style="padding: 120px 0 60px;">
         <div class="container">
-            <h1>سایت رزومه شخصی</h1>
+            <h1>📱 سایت رزومه حرفه‌ای</h1>
             
-            <h3>📋 توضیحات پروژه</h3>
-            <p>این پروژه یک سایت رزومه شخصی است که با استفاده از HTML و CSS ساخته شده. هدف از این پروژه نمایش مهارت‌ها و نمونه کارهای من به کارفرمایان بود.</p>
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                <h3>📋 درباره پروژه</h3>
+                <p>این پروژه یک سایت رزومه شخصی مدرن است که با استفاده از HTML, CSS و JavaScript ساخته شده. امکانات پیشرفته‌ای مانند دارک/لایت مود و طراحی واکنش‌گرا دارد.</p>
+                
+                <h3 style="margin-top: 1.5rem;">🛠️ تکنولوژی‌ها</h3>
+                <div>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GitHub Pages</span>
+                </div>
+                
+                <h3 style="margin-top: 1.5rem;">✨ ویژگی‌های پروژه</h3>
+                <ul style="margin-right: 1.5rem;">
+                    <li>دارک/لایت مود با ذخیره در localStorage</li>
+                    <li>طراحی کاملاً واکنش‌گرا (Responsive)</li>
+                    <li>انیمیشن‌های نرم و جذاب</li>
+                    <li>فرم تماس فعال</li>
+                    <li>بخش مهارت‌ها با نوار پیشرفت</li>
+                </ul>
+                
+                <h3 style="margin-top: 1.5rem;">🔗 لینک‌ها</h3>
+                <p>
+                    <a href="https://amiraliarian.github.io" class="btn" target="_blank">🌐 مشاهده سایت زنده</a>
+                    <a href="https://github.com/amiraliarian/amiraliarian.github.io" class="btn" target="_blank">📂 مشاهده کد در GitHub</a>
+                </p>
+            </div>
             
-            <h3>🛠️ تکنولوژی‌های استفاده شده</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Git & GitHub Pages</li>
-            </ul>
-            
-            <h3>✨ ویژگی‌های پروژه</h3>
-            <ul>
-                <li>طراحی واکنش‌گرا (Responsive)</li>
-                <li>رابط کاربری ساده و حرفه‌ای</li>
-                <li>میزبانی رایگان روی GitHub Pages</li>
-            </ul>
-            
-            <h3>🔗 لینک‌های مفید</h3>
-            <p>
-                <a href="https://amiraliarian.github.io" class="btn" target="_blank">مشاهده سایت زنده</a>
-                <a href="https://github.com/amiraliarian/amiraliarian.github.io" class="btn" target="_blank">مشاهده کد در GitHub</a>
-            </p>
-            
-            <p style="margin-top: 2rem;">
+            <div style="text-align: center; margin-top: 2rem;">
                 <a href="../index.html" class="btn">← بازگشت به صفحه اصلی</a>
-            </p>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2026 امیرعلی آرین</p>
+            <p>&copy; <span id="current-year"></span> امیرعلی آریان</p>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

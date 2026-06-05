@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>امیرعلی آرین - نمونه کارها</title>
+    <meta name="description" content="نمونه کارهای امیرعلی آریان - توسعه‌دهنده حرفه‌ای وب">
+    <title>امیرعلی آریان | توسعه‌دهنده وب حرفه‌ای</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,65 +13,166 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <a href="index.html">امیرعلی آرین</a>
+                    <a href="index.html">امیرعلی آریان</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#skills">مهارت‌ها</a></li>
                     <li><a href="#projects">نمونه کارها</a></li>
-                    <li><a href="#about">درباره من</a></li>
                     <li><a href="#contact">تماس</a></li>
                 </ul>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <section id="about">
-                <h1>سلام! من امیرعلی آرین هستم</h1>
-                <p>توسعه‌دهنده وب با علاقه به ساخت سایت‌های مدرن و کاربرپسند. اینجا می‌تونید نمونه کارهای من رو ببینید.</p>
-            </section>
-
-            <section id="projects">
-                <h2>نمونه کارهای من</h2>
-                <div class="projects-grid">
-                    
-                    <!-- پروژه 1 -->
-                    <div class="project-card">
-                        <h3>سایت رزومه شخصی</h3>
-                        <p class="tech">HTML • CSS • GitHub Pages</p>
-                        <p>اولین پروژه من که با استفاده از HTML و CSS ساخته شده و روی گیت‌هاب پیجز میزبانی میشه.</p>
-                        <a href="portfolio/project1.html" class="btn">مشاهده جزئیات</a>
-                    </div>
-
-                    <!-- پروژه 2 -->
-                    <div class="project-card">
-                        <h3>پروژه نمونه دوم</h3>
-                        <p class="tech">React • Tailwind</p>
-                        <p>توضیحات پروژه دوم... به زودی اضافه میشه</p>
-                        <a href="portfolio/project2.html" class="btn">مشاهده جزئیات</a>
-                    </div>
-
-                    <!-- پروژه 3 -->
-                    <div class="project-card">
-                        <h3>پروژه نمونه سوم</h3>
-                        <p class="tech">JavaScript • API</p>
-                        <p>توضیحات پروژه سوم... به زودی اضافه میشه</p>
-                        <a href="portfolio/project3.html" class="btn">مشاهده جزئیات</a>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>سلام، من <span>امیرعلی آریان</span> هستم</h1>
+                    <p>توسعه‌دهنده وب حرفه‌ای | طراح رابط کاربری | عاشق کدنویسی</p>
+                    <div>
+                        <a href="#projects" class="btn">مشاهده نمونه کارها</a>
+                        <a href="#contact" class="btn btn-outline">تماس با من</a>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">مهارت‌های من</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git & GitHub</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">آخرین پروژه‌ها</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>سایت رزومه حرفه‌ای</h3>
+                            <div>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <p>یک سایت رزومه مدرن با قابلیت دارک/لایت مود و طراحی واکنش‌گرا</p>
+                            <a href="portfolio/project1.html" class="btn">جزئیات بیشتر</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>اپلیکیشن Todo List</h3>
+                            <div>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                            <p>اپلیکیشن مدیریت تسک‌ها با قابلیت ذخیره در localStorage</p>
+                            <a href="portfolio/project2.html" class="btn">جزئیات بیشتر</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>سایت فروشگاهی</h3>
+                            <div>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                            <p>سایت فروشگاهی ساده با سبد خرید و اتصال به API</p>
+                            <a href="portfolio/project3.html" class="btn">جزئیات بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">تماس با من</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="نام و نام خانوادگی" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="ایمیل" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="پیام شما..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">ارسال پیام</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2026 امیرعلی آرین - تمامی حقوق محفوظ است</p>
-            <p>
-                <a href="https://github.com/amiraliarian" style="color: white;">GitHub</a> | 
-                <a href="mailto:amirali@example.com" style="color: white;">ایمیل</a>
-            </p>
+            <div class="social-links">
+                <a href="https://github.com/amiraliarian" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> امیرعلی آریان. تمامی حقوق محفوظ است.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
